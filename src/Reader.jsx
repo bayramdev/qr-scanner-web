@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import classNames from "classnames";
 import { QrReader } from "react-qr-reader";
 
-const Reader = ({ className }) => {
+const Reader = ({ style, width }) => {
   const [data, setData] = useState("No result");
 
   return (
-    <div className={classNames("flex flex-col gap-4", className)}>
+    <div className="flex flex-col gap-4" style={{ width }}>
       <QrReader
         constraints={{ facingMode: "environment", aspectRatio: 1 }}
         onResult={(res, err) => {

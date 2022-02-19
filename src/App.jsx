@@ -1,10 +1,12 @@
 import React from "react";
 import Reader from "./Reader";
+import SourceReference from "./SourceReference";
 
 const App = () => {
   return (
-    <div className="w-full h-full flex pt-4 justify-center">
-      <Reader className="w-[75vmin] h-[75vmin] bg-black" />
+    <div className="w-full h-full flex flex-col items-center pt-4 gap-8">
+      <Reader width="75vmin" />
+      <SourceReference />
     </div>
   );
 };
