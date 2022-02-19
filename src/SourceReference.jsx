@@ -7,7 +7,7 @@ const SourceReference = () => {
       </a>{" "}
       and you can find the source code{" "}
       <a
-        href="https://github.com/bayramdev/qr-scanner/web"
+        href="https://github.com/bayramdev/qr-scanner-web"
         className="text-blue-500"
       >
         here

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { QrReader } from "react-qr-reader";
 
-const Reader = ({ style, width }) => {
+const Reader = ({ width }) => {
   const [data, setData] = useState("No result");
 
   return (
@@ -17,7 +17,7 @@ const Reader = ({ style, width }) => {
           }
         }}
       />
-      <p className="text-center break-normal w-full">{data}</p>
+      <p className="text-center break-words w-full">{data}</p>
     </div>
   );
 };
